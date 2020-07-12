@@ -1,3 +1,129 @@
+body {
+    margin: 0;
+    background-color: #5383e8;
+}
+
+li {
+    list-style: none;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
 .navbar {
     display: flex;
+    justify-content: space-between;
+    background-color: #2a4174;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar__logo {
+    font-size: 30px;
+    color: white;
+    padding-left: 15px;
+    font-family: 'Bangers', cursive;
+}
+
+.navbar__logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__menu {
+    display: flex;
+    padding-left: 0;
+    color: white;
+}
+
+.navbar__menu li {
+    padding: 8px 30px;
+    font-size: 22px;
+}
+
+.navbar__menu li:hover,
+.navbar__toogleBtn:hover {
+    background-color: #d49466;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navbar__login li:hover {
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navbar__login {
+    background-color: #5383e8;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    color: white;
+    padding: 10px;
+    
+}
+
+.navbar__login li {
+    padding-right: 5px;
+}
+
+.navbar__login i {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.navbar__toogleBtn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    display: none;
+    padding: 5px;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    border-radius: 40px;
+    width: 400px;
+    max-width: 60%;
+    height: auto;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar__login {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar__toogleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__login.active {
+        display: flex;
+    }
+ 
 }
