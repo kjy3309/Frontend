@@ -1,172 +1,198 @@
 body {
-    margin: 0;
-    background-color: #5383e8;
+  margin: 0;
+  background-color: #5383e8;
 }
 
 li {
-    list-style: none;
-    font-family: 'Do Hyeon', sans-serif;
+  list-style: none;
+  font-family: "Do Hyeon", sans-serif;
 }
-input[type="text"] { 
-    width: 80%; 
-    border: none;
+input[type="text"] {
+  width: 80%;
+  border: none;
 }
 input[type="text"]:focus {
-    outline:none;
+  outline: none;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 120px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #2a4174;
-    align-items: center;
-    padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2a4174;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .navbar__logo {
-    font-size: 30px;
-    color: white;
-    padding-left: 20px;
-    font-family: 'Bangers', cursive;
+  font-size: 30px;
+  color: white;
+  padding-left: 20px;
+  font-family: "Bangers", cursive;
 }
 
 .navbar__logo a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .navbar__menu {
-    display: flex;
-    padding-left: 0;
-    color: white;
-    margin: 10px 0;
+  display: flex;
+  padding-left: 0;
+  color: white;
+  margin: 10px 0;
 }
 
 .navbar__menu li {
-    text-align: center;
-    padding: 8px 30px;
-    font-size: 20px;
-    color: lightgray;
+  text-align: center;
+  padding: 8px 30px;
+  font-size: 20px;
+  color: lightgray;
 }
-.navbar__menu li:hover{
-    color: white;
+.navbar__menu li:hover {
+  color: white;
 }
 
 .navbar__menu li:hover,
 .navbar__toogleBtn:hover {
-    background-color: #d49466;
-    cursor: pointer;
-    border-radius: 4px;
+  background-color: #5383e8;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .navbar__login li:hover {
-    cursor: pointer;
-    border-radius: 4px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .navbar__login {
-    background-color: #5383e8;
-    border-radius: 15px;
-    font-size: 18px;
-    display: flex;
-    color: white;
-    padding: 10px;
-    margin-right: 20px;
+  background-color: #5383e8;
+  border-radius: 15px;
+  font-size: 18px;
+  display: flex;
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
 }
 
 .navbar__login li {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 
 .navbar__login i {
-    padding: 5px;
-    font-size: 14px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.navbar__login i:hover {
+  cursor: pointer;
 }
 
 .navbar__toogleBtn {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-    font-size: 30px;
-    color: white;
-    display: none;
-    padding: 5px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 30px;
+  color: white;
+  display: none;
+  padding: 5px;
 }
 
 #logo {
-    text-align: center;
+  text-align: center;
 }
 
 #logo img {
-    border-radius: 40px;
-    width: 700px;
-    max-width: 60%;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 15px;
+  border-radius: 40px;
+  width: 700px;
+  max-width: 60%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 .searchbar {
-    background-color: white;
-    justify-content: space-between;
-    border-radius: 3px;
-    display: flex;
-    margin: 20px 100px;
-    padding: 15px;
-    font-size: 20px;
-    width: 650px;
-    max-width: 85%;
-    align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  border-radius: 3px;
+  display: flex;
+  margin: 20px 100px;
+  padding: 15px;
+  font-size: 20px;
+  width: 650px;
+  max-width: 85%;
+  align-items: center;
 }
 
 .searchbar i {
-    display: inline;
-    text-align: center;
+  display: inline;
+  text-align: center;
 }
 
 .searchbar i:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.helpIcon {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 60px;
+  color: #232f46;
+}
+
+.helpIcon:hover {
+  cursor: pointer;
+}
+
+.championAndrecent {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 1000px;
+  height: auto;
+}
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-    .navbar__menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .navbar__menu li {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .navbar__login {
-        display: none;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .navbar__toogleBtn {
-        display: block;
-    }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    .navbar__menu.active,
-    .navbar__login.active {
-        display: flex;
-    }
- 
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__login {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__toogleBtn {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__login.active {
+    display: flex;
+  }
+
+  .helpIcon {
+    display: none;
+  }
 }
