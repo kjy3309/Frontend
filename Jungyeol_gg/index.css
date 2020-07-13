@@ -7,19 +7,33 @@ li {
     list-style: none;
     font-family: 'Do Hyeon', sans-serif;
 }
+input[type="text"] { 
+    width: 80%; 
+    border: none;
+}
+input[type="text"]:focus {
+    outline:none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     background-color: #2a4174;
     align-items: center;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .navbar__logo {
     font-size: 30px;
     color: white;
-    padding-left: 15px;
+    padding-left: 20px;
     font-family: 'Bangers', cursive;
 }
 
@@ -32,11 +46,17 @@ li {
     display: flex;
     padding-left: 0;
     color: white;
+    margin: 10px 0;
 }
 
 .navbar__menu li {
+    text-align: center;
     padding: 8px 30px;
-    font-size: 22px;
+    font-size: 20px;
+    color: lightgray;
+}
+.navbar__menu li:hover{
+    color: white;
 }
 
 .navbar__menu li:hover,
@@ -54,11 +74,11 @@ li {
 .navbar__login {
     background-color: #5383e8;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     color: white;
     padding: 10px;
-    
+    margin-right: 20px;
 }
 
 .navbar__login li {
@@ -86,10 +106,33 @@ li {
 
 #logo img {
     border-radius: 40px;
-    width: 400px;
+    width: 700px;
     max-width: 60%;
     height: auto;
     margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.searchbar {
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 3px;
+    display: flex;
+    margin: 20px 100px;
+    padding: 15px;
+    font-size: 20px;
+    width: 650px;
+    max-width: 85%;
+    align-items: center;
+}
+
+.searchbar i {
+    display: inline;
+    text-align: center;
+}
+
+.searchbar i:hover {
+    cursor: pointer;
 }
 
 
