@@ -3,10 +3,11 @@ body {
   background-color: #5383e8;
 }
 
-li {
+.navbar__menu li {
   list-style: none;
   font-family: "Do Hyeon", sans-serif;
 }
+
 input[type="text"] {
   width: 80%;
   border: none;
@@ -14,6 +15,26 @@ input[type="text"] {
 input[type="text"]:focus {
   outline: none;
 }
+
+.ad__content {
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  display: flex;
+  left: 50px;
+  top: 150px;
+}
+
+.ad__content img {
+  width: 300px;
+  height: 600px;
+}
+
+.slider {
+    z-index: 1;
+}
+
+
 
 .container {
   display: flex;
@@ -83,6 +104,7 @@ input[type="text"]:focus {
 
 .navbar__login li {
   padding-right: 5px;
+  list-style: none;
 }
 
 .navbar__login i {
@@ -106,6 +128,8 @@ input[type="text"]:focus {
 
 #logo {
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 #logo img {
@@ -113,8 +137,7 @@ input[type="text"]:focus {
   width: 700px;
   max-width: 60%;
   height: auto;
-  margin-top: 50px;
-  margin-bottom: 15px;
+  
 }
 
 .searchbar {
@@ -122,11 +145,12 @@ input[type="text"]:focus {
   justify-content: space-between;
   border-radius: 3px;
   display: flex;
-  margin: 20px 100px;
   padding: 15px;
   font-size: 20px;
   width: 600px;
   align-items: center;
+  margin-bottom: 70px;
+  margin-top: 10px;
 }
 
 .searchbar i {
@@ -170,6 +194,12 @@ input[type="text"]:focus {
   width: 50%;
 }
 
+@media screen and (max-width: 1500px) {
+  .ad__content {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -198,6 +228,10 @@ input[type="text"]:focus {
     display: block;
   }
 
+  #logo {
+    margin-top: 70px;
+  }
+
   .searchbar {
     width: 80%;
   }
@@ -208,7 +242,7 @@ input[type="text"]:focus {
   }
 
   .championAndrecent {
-    width: 500px;
+    width: 490px;
     flex-direction: column;
   }
 
