@@ -158,6 +158,10 @@ input[type="text"]:focus {
   height: auto;
 }
 
+.js-clock {
+  display: inline;
+}
+
 .championAndrecent.champion {
   width: 50%;
 }
