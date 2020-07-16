@@ -22,7 +22,7 @@ input[type="text"]:focus {
 .ad__content {
   width: 250px;
   height: 600px;
-  position: absolute;
+  position: fixed;
   display: flex;
   left: 50px;
   top: 220px;
