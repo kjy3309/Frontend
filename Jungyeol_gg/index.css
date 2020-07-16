@@ -4,8 +4,11 @@ body {
 }
 
 .navbar__menu li {
-  list-style: none;
   font-family: "Do Hyeon", sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 input[type="text"] {
@@ -17,16 +20,17 @@ input[type="text"]:focus {
 }
 
 .ad__content {
-  width: 300px;
+  width: 250px;
   height: 600px;
   position: absolute;
   display: flex;
   left: 50px;
-  top: 150px;
+  top: 220px;
+  
 }
 
 .ad__content img {
-  width: 300px;
+  width: 250px;
   height: 600px;
 }
 
@@ -176,23 +180,51 @@ input[type="text"]:focus {
 
 .championAndrecent {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  background-color: white;
-  width: 900px;
+  color: white;
+  width: 1124px;
   height: auto;
+}
+
+.champion__tear {
+  margin-bottom: 50px;
+}
+
+.tear__title {
+  justify-content: center;
+}
+
+.champion h3 {
+  display: inline;
 }
 
 .js-clock {
   display: inline;
 }
 
-.championAndrecent.champion {
-  width: 50%;
+.tear{
+  display: inline-block;
+  width: 220px;
+  height: 176px;
 }
 
-.championAndrecent.recent {
-  width: 50%;
+.tear img{
+  width: 220px;
+  height: 176px;
 }
+
+.tear__title {
+  display: flex;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.recent {
+  display: block;
+}
+
+
 
 @media screen and (max-width: 1500px) {
   .ad__content {
